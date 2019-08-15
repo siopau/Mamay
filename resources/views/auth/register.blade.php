@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 <section class="section section-shaped section-lg">
-    <div class="shape shape-style-1 bg-gradient-default">
+    <div class="shape shape-style-1 bg-gradient-pink">
         <span></span>
         <span></span>
         <span></span>
@@ -81,7 +81,17 @@
                                             <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                                         </div>
                                     </div>
-
+                                    <div class="form-group row">
+                                            <div class="col-md-6 offset-md-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+            
+                                                    <label class="form-check-label" for="remember">
+                                                        {{ __('Accept') }} <a href="#">Terms and Condition</a>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
                                     <div class="form-group row mb-0">
                                         <div class="col-md-6 offset-md-4">
                                             <button type="submit" class="btn btn-primary">

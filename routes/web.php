@@ -23,3 +23,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/interviewform','FormsController@index')->name('interviewform');
 
 Route::get('{path}', 'HomeController@index')->where( 'path' , '([A-z\d\-\/_.]+)?' );
+
+Route::namespace('Forms')->group(function () {
+    
+});

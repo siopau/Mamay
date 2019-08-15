@@ -21,8 +21,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  
   <link rel="stylesheet" href="{{ URL::asset('dist/css/adminlte.min.css') }}" />
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+
+  <!-- Ion Slider -->
+   <!--Plugin CSS file with desired skin-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css"/>
 
 
 </head>
