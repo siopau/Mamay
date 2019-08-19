@@ -7,3 +7,7 @@
 <script src="https://adminlte.io/themes/dev/AdminLTE/plugins/fastclick/fastclick.js"></script>   
 <!--Plugin JavaScript file-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+<!--Vue Form CSS-->
+<script src="https://unpkg.com/vue-form-wizard/dist/vue-form-wizard.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>

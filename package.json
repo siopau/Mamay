@@ -26,6 +26,8 @@
     },
     "dependencies": {
         "admin-lte": "^3.0.0-alpha.2",
+        "element-ui": "^2.11.1",
+        "vue-form-wizard": "^0.8.4",
         "vue-router": "^3.0.7"
     }
 }

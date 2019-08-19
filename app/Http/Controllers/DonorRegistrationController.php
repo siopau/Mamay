@@ -4,7 +4,7 @@ namespace Mamay\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class FormsController extends Controller
+class DonorRegistrationController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,7 @@ class FormsController extends Controller
      */
     public function index()
     {
-        return view('interviewform');
+        return view('register-donor');
     }
 
     /**
@@ -34,10 +34,7 @@ class FormsController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, [
-            'email' => 'required'
-        ]);
-        return 'ayos';
+        //
     }
 
     /**

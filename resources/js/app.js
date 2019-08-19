@@ -11,21 +11,50 @@ window.Vue = require('vue');
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
+//global registration
+import VueFormWizard from 'vue-form-wizard'
+import 'vue-form-wizard/dist/vue-form-wizard.min.css'
+Vue.use(VueFormWizard)
+
+//local registration
+import {FormWizard, TabContent} from 'vue-form-wizard'
+import 'vue-form-wizard/dist/vue-form-wizard.min.css'
+//component code
+components: {
+  FormWizard,
+  TabContent
+}
 
 let routes = [
-    { path: '/dashboard', component: require('./components/Dashboard.vue').default },
-    { path: '/view-reports', component: require('./components/ViewReports.vue').default },
-    { path: '/view-users', component: require('./components/ViewUsers.vue').default },    
-    { path: '/manage-roles', component: require('./components/ManageRoles.vue').default },
-    { path: '/manage-events', component: require('./components/ManageEvents.vue').default },
-    { path: '/manage-articles', component: require('./components/ManageArticles.vue').default },
-    { path: '/manage-logistics', component: require('./components/ManageLogistics.vue').default },
-    { path: '/manage-transactions', component: require('./components/ManageTransactions.vue').default},
-    { path: '/view-transactions', component: require('./components/ViewTransactions.vue').default },
-    { path: '/edit-price-range', component: require('./components/EditPriceRange.vue').default },
-    { path: '/manage-interview-form', component: require('./components/ManageInterviewForm.vue').default },
-    { path: '/manage-milkbanks', component: require('./components/ManageMilkBanks.vue').default },
-    { path: '/manage-users', component: require('./components/ManageUsers.vue').default }
+    { path: '/dashboard', component: require('./components/admin/Dashboard.vue').default },
+    { path: '/view-reports', component: require('./components/admin/ViewReports.vue').default },
+    { path: '/view-users', component: require('./components/admin/ViewUsers.vue').default },    
+    { path: '/manage-roles', component: require('./components/admin/ManageRoles.vue').default },
+    { path: '/manage-events', component: require('./components/admin/ManageEvents.vue').default },
+    { path: '/manage-articles', component: require('./components/admin/ManageArticles.vue').default },
+    { path: '/manage-logistics', component: require('./components/admin/ManageLogistics.vue').default },
+    { path: '/manage-transactions', component: require('./components/admin/ManageTransactions.vue').default},
+    { path: '/view-transactions', component: require('./components/admin/ViewTransactions.vue').default },
+    { path: '/edit-price-range', component: require('./components/admin/EditPriceRange.vue').default },
+    { path: '/manage-interview-form', component: require('./components/admin/ManageInterviewForm.vue').default },
+    { path: '/manage-milkbanks', component: require('./components/admin/ManageMilkBanks.vue').default },
+    { path: '/manage-users', component: require('./components/admin/ManageUsers.vue').default },
+
+    //Milkbank Staff Routes
+    { path: '/donor-registration', component: require('./components/milkbank-staff/DonorRegistration.vue').default },
+    { path: '/milkbank-dashboard', component: require('./components/milkbank-staff/MilkbankDashboard.vue').default },
+    { path: '/received-transported-milk', component: require('./components/milkbank-staff/ReceivedTransportedMilk.vue').default },
+    { path: '/manage-prepasteurization', component: require('./components/milkbank-staff/ManageMilkPrePasteurization.vue').default },
+    { path: '/manage-pasteurization-post-processing', component: require('./components/milkbank-staff/ManagePasteurizationAndPostProcessing.vue').default },
+    { path: '/manage-stored-milk', component: require('./components/milkbank-staff/ManageStoredMilk.vue').default },
+    { path: '/manage-milkbatches', component: require('./components/milkbank-staff/ManageMilkBatches.vue').default },
+    { path: '/recipient-selection', component: require('./components/milkbank-staff/RecipientSelection.vue').default },
+    { path: '/manage-milkbank-documents', component: require('./components/milkbank-staff/ManageMilkBankDocuments.vue').default },
+    { path: '/donor-records', component: require('./components/milkbank-staff/DonorRecords.vue').default },
+    { path: '/recipient-records', component: require('./components/milkbank-staff/RecipientRecords.vue').default },
+    { path: '/donor-profile', component: require('./components/milkbank-staff/DonorProfile.vue').default },
+
+    
   ]
 
 const router = new VueRouter({

@@ -22,9 +22,9 @@
               <div class="card-body">
                 <input type="text" class="js-range-slider" name="my_range" value="" data-type="double"
                   data-min="0"
-                  data-max="1000"
-                  data-from="200"
-                  data-to="500"
+                  data-max="10"
+                  data-from="2"
+                  data-to="5"
                   data-grid="true"
               />    
               </div>
