@@ -8,6 +8,10 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+Vue.use(ElementUI)
+
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
@@ -24,6 +28,7 @@ components: {
   FormWizard,
   TabContent
 }
+
 
 let routes = [
     { path: '/dashboard', component: require('./components/admin/Dashboard.vue').default },
@@ -53,6 +58,8 @@ let routes = [
     { path: '/donor-records', component: require('./components/milkbank-staff/DonorRecords.vue').default },
     { path: '/recipient-records', component: require('./components/milkbank-staff/RecipientRecords.vue').default },
     { path: '/donor-profile', component: require('./components/milkbank-staff/DonorProfile.vue').default },
+
+    { path: '/cart', component: require('./components/ecommerce/Cart.vue').default },
 
     
   ]

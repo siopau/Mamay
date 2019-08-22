@@ -37,7 +37,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       @include('includes.admin-sidebar')
       @include('includes.admin-contentwrapper')
       @include('includes.admin-footer')
-  </div>
+  </div> 
 
 <!-- REQUIRED SCRIPTS -->
   @include('includes.admin-scripts')

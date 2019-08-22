@@ -22,6 +22,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/register-donor', 'DonorRegistrationController@index')->name('register-donor');
 
+Route::get('/donate-milk', 'DonateMilkController@index')->name('donate-milk');
+
+Route::get('/purchase-milk', 'PurchaseMilkController@index')->name('purchase-milk');
+
+Route::get('/cart', 'CartController@index')->name('cart');
+
 Route::get('{path}', 'HomeController@index')->where( 'path' , '([A-z\d\-\/_.]+)?' );
 
 Route::namespace('Forms')->group(function () {

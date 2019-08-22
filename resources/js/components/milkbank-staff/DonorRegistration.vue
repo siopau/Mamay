@@ -25,10 +25,15 @@
                             <div class="form row">
                                 <div class="form-group col-md-4">
                                     <label for="donorDob">Date of Birth</label>
-                                    <div class='input-group date' id='donorDob'>
-                                    <input type='text' class="form-control" />
-                                    
-                                </div>
+                                    <base-input addon-left-icon="ni ni-calendar-grid-58">
+                                    <flat-picker slot-scope="{focus, blur}"
+                                                @on-open="focus"
+                                                @on-close="blur"
+                                                :config="{allowInput: true}"
+                                                class="form-control datepicker"
+                                                v-model="dates.simple">
+                                    </flat-picker>
+                                </base-input>
                                 </div>
                                 <div class="form-group col-md-2">
                                     <label for="donorAge">Age</label>
@@ -93,11 +98,11 @@
             </tab-content>
             <tab-content title="Initial Donor Screening"
                         icon="fa fa-file">
-            My first tab content
+            
             </tab-content>
             <tab-content title="Medical History"
                         icon="fa fa-book-medical">
-            My first tab content
+                        
             </tab-content>
             <tab-content title="Sexual History"
                         icon="fa fa-venus-mars">
@@ -166,11 +171,20 @@
 </template>
 
 <script>
-    
     export default {
+        
+        data() {
+            return {
+            dates: {
+                simple: "2018-07-17"
+                }
+            }
+        },
         mounted() {
             console.log('Component mounted.')
             Vue.use(VueFormWizard) 
+            Vue.use(ElementUI)
+            components: {flatPicker}
         },
         methods: {
             onComplete: function(){

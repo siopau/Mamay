@@ -124,55 +124,36 @@
     </section>
     <section class="section section-lg">
       <div class="container">
-        <div class="row row-grid align-items-center">
-          <div class="col-md-6 order-md-2">
-            <img src="../img/theme/promo-1.png" class="img-fluid floating">
-          </div>
-          <div class="col-md-6 order-md-1">
-            <div class="pr-md-5">
-              <div class="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
-                <i class="ni ni-settings-gear-65"></i>
+          <div class="col-md-12 order-md-1">
+              <h3>Marketplace</h3>
+              <div class="card" style="width: 25rem;">
+                <img class="card-img-top" src="../img/brand/item.jpg" alt="Card image cap">
+                <div class="card-body"> 
+                  <form>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-5 col-form-label card-text">Date and Time of Extraction:</label>
+                        <div class="col-sm-7">
+                        <input type="email" readonly class="form-control-plaintext" id="inputEmail3">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputEmail3" class="col-sm-5 col-form-label card-text">Approximate Volume:</label>
+                      <div class="col-sm-7">
+                      <input type="email" readonly class="form-control-plaintext" id="inputEmail3">
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-5 col-form-label card-text">Price:</label>
+                    <div class="col-sm-7">
+                    <input type="email" readonly class="form-control-plaintext" id="inputEmail3">
+                    </div>
+                </div>
+                  </form>
+                  <div class="text-right">
+                  <a href="#" class="btn btn-primary ">Add to Cart</a>
+                  </div>
+                </div>
               </div>
-              <h3>Awesome features</h3>
-              <p>Mamay is an ecommerce platform that connects individuals from different backgrounds that may promote breastfeeding culture.</p>
-              <ul class="list-unstyled mt-5">
-                <li class="py-2">
-                  <div class="d-flex align-items-center">
-                    <div>
-                      <div class="badge badge-circle badge-success mr-3">
-                        <i class="ni ni-settings-gear-65"></i>
-                      </div>
-                    </div>
-                    <div>
-                      <h6 class="mb-0">Buy and sell breastmilk</h6>
-                    </div>
-                  </div>
-                </li>
-                <li class="py-2">
-                  <div class="d-flex align-items-center">
-                    <div>
-                      <div class="badge badge-circle badge-success mr-3">
-                        <i class="ni ni-html5"></i>
-                      </div>
-                    </div>
-                    <div>
-                      <h6 class="mb-0">Build a community of breastfeeding advocates</h6>
-                    </div>
-                  </div>
-                </li>
-                <li class="py-2">
-                  <div class="d-flex align-items-center">
-                    <div>
-                      <div class="badge badge-circle badge-success mr-3">
-                        <i class="ni ni-satisfied"></i>
-                      </div>
-                    </div>
-                    <div>
-                      <h6 class="mb-0">Super friendly support team</h6>
-                    </div>
-                  </div>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
@@ -202,10 +183,10 @@
                 <i class="ni ni-settings"></i>
               </div>
               <h3>Our customers</h3>
-              <p class="lead">Don't let your uses guess by attaching tooltips and popoves to any element. Just make sure you enable them first via JavaScript.</p>
-              <p>The kit comes with three pre-built pages to help you get started faster. You can change the text and images and you're good to go.</p>
-              <p>The kit comes with three pre-built pages to help you get started faster. You can change the text and images and you're good to go.</p>
-              <a href="#" class="font-weight-bold text-warning mt-5">A beautiful UI Kit for impactful websites</a>
+              <p class="text-dark lead">Don't let your uses guess by attaching tooltips and popoves to any element. Just make sure you enable them first via JavaScript.</p>
+              <p class="text-dark">The kit comes with three pre-built pages to help you get started faster. You can change the text and images and you're good to go.</p>
+              <p class="text-dark">The kit comes with three pre-built pages to help you get started faster. You can change the text and images and you're good to go.</p>
+              <a href="#" class="text-warning font-weight-bold mt-5">A beautiful UI Kit for impactful websites</a>
             </div>
           </div>
         </div>

@@ -19,15 +19,7 @@
                     <div class="col-md-8">
                         <div class="card">
                             <div class="card-header bg-white pb-5">
-                                    <div class="text-muted text-center mb-3"><small>Please select:</small></div>
-                                    <div class="text-center">
-                                    <a href="#" class="btn btn-warning btn-icon mr-4">
-                                        <span class="btn-inner--text">I want to donate my breastmilk</span>
-                                    </a>
-                                    <a href="#" class="btn btn-info btn-icon">
-                                        <span class="btn-inner--text">I want to buy breastmilk</span>
-                                    </a>
-                                    </div>
+                                    <div class="text-muted text-center mb-3"><small>Register</small></div>
                             <div class="card-body">
                                 <form method="POST" action="{{ route('register') }}">
                                     @csrf
