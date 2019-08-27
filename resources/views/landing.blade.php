@@ -149,10 +149,15 @@
                     </div>
                 </div>
                   </form>
-                  <div class="text-right">
-                  <a href="#" class="btn btn-primary ">Add to Cart</a>
+                  <div class="row">
+                    <div class="col-6 text-center btn bg-primary">
+                  <a href="#" class="text-white">Add to Cart &nbsp;<i class="fa fa-shopping-cart"></i></a>
                   </div>
+                  <div class="col-5 text-center btn bg-success">
+                    <a href="#" class="text-white">Details &nbsp;<i class="fa fa-bars"></i></a>
+                    </div>
                 </div>
+                  </div>
               </div>
             </div>
           </div>

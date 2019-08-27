@@ -4187,6 +4187,66 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -102326,16 +102386,146 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-8" }, [
-          _c("div", { staticClass: "card" }, [
-            _c("div", { staticClass: "card-header" }, [
-              _vm._v("Example Component")
+        _c("div", { staticClass: "container mb-4" }, [
+          _c("div", { staticClass: "jumbotron bg-gradient-pink text-center" }, [
+            _c("div", { staticClass: "container" }, [
+              _c("h1", { staticClass: "jumbotron-heading" }, [
+                _vm._v("Your Cart")
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-12" }, [
+              _c("div", { staticClass: "table-responsive" }, [
+                _c("table", { staticClass: "table table-striped" }, [
+                  _c("thead", [
+                    _c("tr", [
+                      _c("th", { attrs: { scope: "col" } }),
+                      _vm._v(" "),
+                      _c("th", { attrs: { scope: "col" } }, [
+                        _vm._v("Product")
+                      ]),
+                      _vm._v(" "),
+                      _c("th", { attrs: { scope: "col" } }, [
+                        _vm._v("Available")
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "th",
+                        { staticClass: "text-center", attrs: { scope: "col" } },
+                        [_vm._v("Quantity")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "th",
+                        { staticClass: "text-right", attrs: { scope: "col" } },
+                        [_vm._v("Price")]
+                      ),
+                      _vm._v(" "),
+                      _c("th")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tbody", [
+                    _c("tr", [
+                      _c("td", [
+                        _c("img", {
+                          attrs: {
+                            src: "https://dummyimage.com/50x50/55595c/fff"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("Breastmilk")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("In stock")]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("input", {
+                          staticClass: "form-control text-right",
+                          attrs: { type: "text", value: "1" }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "text-right" }, [
+                        _vm._v("₱ 124")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "text-right" }, [
+                        _c("button", { staticClass: "btn btn-sm btn-danger" }, [
+                          _c("i", { staticClass: "fa fa-trash" })
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td"),
+                      _vm._v(" "),
+                      _c("td"),
+                      _vm._v(" "),
+                      _c("td"),
+                      _vm._v(" "),
+                      _c("td"),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("Sub-Total")]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "text-right" }, [_vm._v("₱ 255")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td"),
+                      _vm._v(" "),
+                      _c("td"),
+                      _vm._v(" "),
+                      _c("td"),
+                      _vm._v(" "),
+                      _c("td"),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("Shipping")]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "text-right" }, [_vm._v("₱ 690")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td"),
+                      _vm._v(" "),
+                      _c("td"),
+                      _vm._v(" "),
+                      _c("td"),
+                      _vm._v(" "),
+                      _c("td"),
+                      _vm._v(" "),
+                      _c("td", [_c("strong", [_vm._v("Total")])]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "text-right" }, [
+                        _c("strong", [_vm._v("₱ 346")])
+                      ])
+                    ])
+                  ])
+                ])
+              ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [
-              _vm._v(
-                "\n                    I'm an example component.\n                "
-              )
+            _c("div", { staticClass: "col mb-2" }, [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-sm-12  col-md-6" }, [
+                  _c("button", { staticClass: "btn btn-block btn-light" }, [
+                    _vm._v("Continue Shopping")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-12 col-md-6 text-right" }, [
+                  _c(
+                    "button",
+                    {
+                      staticClass:
+                        "btn btn-lg btn-block btn-success text-uppercase"
+                    },
+                    [_vm._v("Checkout")]
+                  )
+                ])
+              ])
             ])
           ])
         ])
